@@ -19,10 +19,9 @@ class App extends Component {
       <HashRouter>
         <header className={style.header}>
           <p className={style.title}>
-            demo.<a href="https://deeppavlov.ai"><span className={style.blue}>DeepPavlov</span>.<span className={style.yellow}>ai</span></a>
+            NLP.<a href="https://cloudintegration.eu"><span className={style.blue}>Demo</span></a>
           </p>
-          <iframe title="stars" src="https://ghbtns.com/github-btn.html?user=deepmipt&repo=DeepPavlov&type=star&count=true&size=large"
-           frameBorder="0" scrolling="0" width="160px" height="30px"></iframe>
+          
           {/*<img src={header} alt="DeepPavlov Demo"/>*/}
           <Nav/>
         </header>

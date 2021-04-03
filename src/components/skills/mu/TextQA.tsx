@@ -15,9 +15,7 @@ const config: BaseSkillProps<Req, Res> = {
   desc: <p>
     The Question Answering component answers a question based on a given context
      (e.g, a paragraph of text), where the answer to the question is a segment of the context.
-     This component allows you to answer questions based on your documentation.
-     To learn more on implementation check out our
-    <a href="http://docs.deeppavlov.ai/en/master/features/models/squad.html" target="_blank" rel="noopener noreferrer"> documentation</a>.
+     
     </p>,
   docker: 'deeppavlov/squad_en',
   inputs: [{
@@ -30,8 +28,8 @@ const config: BaseSkillProps<Req, Res> = {
     name: 'question',
   }],
   examples: [{
-    text: 'Волосы у меня на груди окрасились, потому что я пролил на них ракетный окислитель. Лет мне двадцать девять, скоро юбилей. А в армии я потому, что меня жена с тёщей хотели в сумасшедший дом отдать — за убеждения',
-    question: 'Почему у тебя волосы на груди окрасились?',
+    text: 'Bundeskanzlerin Angela Merkel (CDU) hat einem Medienbericht zufolge bereits am Freitag vergangener Woche vom erneuten Anpassungsbedarf beim Impfstoff von Astrazeneca erfahren - vier Tage vor der bundesweiten Entscheidung, das Präparat nur noch Menschen über 60 Jahren zu spritzen.',
+    question: 'Wer ist die Bundeskanzlerin?',
   }, {
     text: `Sri Lanka was known from the beginning of British colonial rule as Ceylon (/sɪˈlɒn/, US also /seɪˈlɒn/).
     A nationalist political movement arose in the country in the early 20th century to obtain political independence, which was granted in 1948; the country became a republic and adopted its current name in 1972.

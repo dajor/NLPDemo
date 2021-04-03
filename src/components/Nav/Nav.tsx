@@ -30,8 +30,7 @@ const ROUTES = {
     { title: 'ODQA', link: 'odqa' },
     { title: 'Ranking', link: 'ranking' },
     { title: 'Intent classification', link: 'intent' },
-    { title: 'Insult detection', link: 'insult' },
-    { title: 'Deepy', link: 'chat' },
+    
   ],
   mu: [
     { title: 'Text QA', link: 'textqa' },
@@ -105,9 +104,7 @@ class Nav extends Component<Props, State> {
           {this.renderNavLinks(lang)}
         </ul>
         <div className={style.langSelector}>
-          <div className={cn(lang === 'ru' && style.active)} onClick={this.langChange('ru')}>Ru</div>
           <div className={cn(lang === 'en' && style.active)} onClick={this.langChange('en')}>En</div>
-          <div className={cn(lang === 'zh' && style.active)} onClick={this.langChange('zh')}>Zh</div>
           <div className={cn(lang === 'mu' && style.active)} onClick={this.langChange('mu')}>Multi-Lang</div>
         </div>
       </nav>

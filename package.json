@@ -1,7 +1,7 @@
 {
   "name": "ipavlov-demo",
   "homepage": "http://demo.ipavlov.ai",
-  "description": "demo for deeppavlov models",
+  "description": "demo for NLP models",
   "keywords": [
     "ipavlov",
     "deeppavlov",
