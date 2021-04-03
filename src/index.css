@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont," Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+#root {
+  max-width: 1140px;
+  width: 100%;
+  min-width: 750px;
+  position: relative;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: 1.5em;
+}
+
+textarea {
+  font-family: inherit;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 30px -5px #0069d9;
+  background-color: #0069d9;
+  border-color: #0069d9;
+}
+
+a {
+  color: #0069b4;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #0069b4;
+}
+
+.card {
+  padding: .4em .4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  color: white;
+  position: relative; 
+  display: inline-block;
+}
+.card:hover>.tooltip {
+  opacity: 1;
+}
+.innerTip {
+  border: 1px solid white;
+  padding: 2px 5px;
+  font-size: 10px;
+  margin-left: 5px;
+}
+.activeTooltip {
+  opacity: 1 !important;
+}
+
+.leftTooltip {
+  left: 0 !important;
+}
+.leftTooltip > .tooltipInner {
+  float: left;   
+}
+
+.tooltip {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  user-select: none;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 15;
+}
+.tooltipInner {
+  margin-top: 5px;
+  border-radius: .25rem;
+  max-width: 200px;
+  white-space: normal;
+  color: white;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14px;
+  padding: 5px 10px;
+  display: block;
+  float: right;
+}
+.margin_r {
+  margin-right: 7px;
+}
+
+@media only screen 
+and (max-width: 768px) {
+  #root {
+    width: 100%;
+    min-width: 100%;
+    overflow-x: hidden;
+  }
+  .card:hover>.tooltip {
+    opacity: 0;
+  }
+  body {
+    padding: 0;
+  }
+}
